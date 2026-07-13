@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work with us — U-go Support Hub</title>
+<meta name="description" content="Tell us what you're dealing with. U-go Support Hub builds plain-language AI understanding and working no-code systems for founders and SMB teams.">
+<meta name="theme-color" content="#0D0C0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D0C0A'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='52' font-weight='700' text-anchor='middle' fill='%23E8A33C'%3Eu%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" aria-label="Hugo SupportHub — home"><span class="logo-frame"><b>HUGO</b><i>SUPPORTHUB</i></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/services">Services</a>
+      <a href="/about">About</a>
+      <a class="nav-cta" href="/work-with-us">Work with us</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menuOverlay">
+      <i></i><i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <a href="/">Home</a>
+  <a href="/services">Services</a>
+  <a href="/about">About</a>
+  <a class="m-cta" href="/work-with-us">Work with us →</a>
+  <div class="m-foot"><span>HUGO SUPPORTHUB</span><span>PORT HARCOURT → WORLDWIDE</span></div>
+</div>
+
+<main>
+
+  <section class="page-hero" style="border-bottom:none;padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow rv">Work with us</span>
+      <h1 class="h-display rv rv-d1">Tell us what's eating <em>your hours</em>.</h1>
+      <p class="lede rv rv-d2">Three questions, two minutes. You'll get a straight answer about whether we can help — and if a call makes sense, you can book it the moment you hit send.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:clamp(40px,6vh,64px)">
+    <div class="wrap ww-grid">
+
+      <aside class="ww-aside rv">
+        <div class="card">
+          <span class="k">What happens next</span>
+          <h3 style="margin-top:10px">1 — We read it. Personally.</h3>
+          <p>Founder-led means the founder reads your message — no SDR, no autoresponder essay.</p>
+        </div>
+        <div class="card">
+          <h3>2 — You get a straight answer</h3>
+          <p>Within two business days: either "here's how we'd approach it" or "this isn't a fit, try X instead."</p>
+        </div>
+        <div class="card">
+          <h3>3 — A 30-minute call if it fits</h3>
+          <p>Your workflow, your tools, a clear next step. No slideware.</p>
+        </div>
+      </aside>
+
+      <div id="wwZone">
+        <form class="lead" id="leadForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="fName">Your name</label>
+              <input id="fName" name="name" type="text" autocomplete="name" placeholder="Ada Obi" required>
+            </div>
+            <div class="field">
+              <label for="fEmail">Email</label>
+              <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="fBiz">Business / role</label>
+              <input id="fBiz" name="business" type="text" placeholder="e.g. Dental clinic owner, agency ops lead" required>
+            </div>
+            <div class="field">
+              <label for="fNeed">What do you need?</label>
+              <select id="fNeed" name="need" required>
+                <option value="" disabled selected>Choose one…</option>
+                <option>Automation build (workflows, CRM, follow-ups)</option>
+                <option>AI understanding for me or my team</option>
+                <option>Both — roadmap it for me</option>
+                <option>Something else / not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fMsg">What's eating your hours right now?</label>
+            <textarea id="fMsg" name="message" placeholder="The repetitive work, the tools you've tried, what didn't stick…" required></textarea>
+          </div>
+          <div>
+            <button class="btn btn-primary" type="submit" id="leadSubmit">Send it <span class="arr">→</span></button>
+          </div>
+          <p class="form-msg err" id="leadErr" role="status">→ That didn't go through. Email us directly at ugochukwuokoronkwo24@gmail.com — or book a call below.</p>
+          <p class="form-note">Your message goes straight to the founder's inbox. No lists, no spam.</p>
+        </form>
+
+        <div class="thanks" id="leadThanks" role="status">
+          <span class="eyebrow" style="color:var(--accent)">Message received</span>
+          <h3 id="thanksTitle" style="margin-top:14px">Thank you — it's in the inbox.</h3>
+          <p>You'll hear back within two business days. Want to skip the wait? Grab a 30-minute slot now and come with your messiest workflow.</p>
+          <a class="btn btn-primary" href="https://calendly.com/ugochukwuokoronkwo01/30min" target="_blank" rel="noopener">Book the 30-min call <span class="arr">→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap rv">
+      <h2>Prefer to talk first?</h2>
+      <h2>The call is <em>30 minutes</em>, and it's free.</h2>
+      <a class="btn btn-ghost" href="https://calendly.com/ugochukwuokoronkwo01/30min" target="_blank" rel="noopener">Book directly on Calendly <span class="arr">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand foot">
+        <a class="logo" href="/" aria-label="Hugo SupportHub — home"><span class="logo-frame"><b>HUGO</b><i>SUPPORTHUB</i></span></a>
+        <p>Plain-language AI and working no-code systems, from Port Harcourt to anywhere a founder needs a system that runs without them.</p>
+      </div>
+      <div class="foot">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work-with-us">Work with us</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>Case studies</h4>
+        <ul>
+          <li><a href="/case-study/aios">AIOS — AI operating system</a></li>
+          <li><a href="/case-study/prospect-scoring">Prospect scoring engine</a></li>
+          <li><a href="/case-study/client-workflows">Client workflow automation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 U-go Support Hub · Ugochukwu Okoronkwo</span>
+      <span>
+        <a href="https://www.instagram.com/hugo_light_of_the_world" target="_blank" rel="noopener">Instagram</a> ·
+        <a href="https://www.linkedin.com/in/ugochukwuokoronkwo" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://x.com/HugobossSleek" target="_blank" rel="noopener">X</a>
+      </span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+<script>
+/* lead form → /api/lead → thank-you (with honest fallback) */
+(function () {
+  const form = document.getElementById("leadForm");
+  const zone = document.getElementById("wwZone");
+  const err = document.getElementById("leadErr");
+  const submitBtn = document.getElementById("leadSubmit");
+  const thanksTitle = document.getElementById("thanksTitle");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    err.style.display = "none";
+    if (!form.reportValidity()) return;
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        const first = (data.name || "").trim().split(/\s+/)[0];
+        if (first) thanksTitle.textContent = "Thank you, " + first + " — it's in the inbox.";
+        zone.classList.add("ww-done");
+        window.scrollTo({ top: zone.offsetTop - 120, behavior: "smooth" });
+      } else {
+        err.style.display = "block";
+      }
+    } catch {
+      err.style.display = "block";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Send it <span class="arr">→</span>';
+    }
+  });
+})();
+</script>
+</body>
+</html>

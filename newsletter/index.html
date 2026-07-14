@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case study: AIOS — U-go Support Hub</title>
-<meta name="description" content="How a personal AI operating system was built inside Claude Code — eleven slash commands running client delivery, lead generation, content and pipeline.">
-<link rel="canonical" href="https://ugo-hub.vercel.app/case-study/aios">
+<title>Newsletter — U-go Support Hub</title>
+<meta name="description" content="Plain-language AI for founders and operators — each issue explains what's worth using and how to wire it into a real business. Read past issues or subscribe free.">
+<link rel="canonical" href="https://ugo-hub.vercel.app/newsletter">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Case study: AIOS — U-go Support Hub">
-<meta property="og:description" content="How a personal AI operating system was built inside Claude Code — eleven slash commands running client delivery, lead generation, content and pipeline.">
-<meta property="og:url" content="https://ugo-hub.vercel.app/case-study/aios">
+<meta property="og:title" content="Newsletter — U-go Support Hub">
+<meta property="og:description" content="Plain-language AI for founders and operators — what's worth using and how to wire it into your business. No spam, unsubscribe anytime.">
+<meta property="og:url" content="https://ugo-hub.vercel.app/newsletter">
 <meta property="og:image" content="https://ugo-hub.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case study: AIOS — U-go Support Hub">
-<meta name="twitter:description" content="How a personal AI operating system was built inside Claude Code — eleven slash commands running client delivery, lead generation, content and pipeline.">
+<meta name="twitter:title" content="Newsletter — U-go Support Hub">
+<meta name="twitter:description" content="Plain-language AI for founders and operators — what's worth using and how to wire it into your business.">
 <meta name="twitter:image" content="https://ugo-hub.vercel.app/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="U-go Support Hub newsletter" href="https://ugo-hub.vercel.app/newsletter/feed.xml">
 <meta name="theme-color" content="#0D0C0A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D0C0A'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='52' font-weight='700' text-anchor='middle' fill='%23E8A33C'%3Eu%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,71 +53,42 @@
 
 <main>
 
-  <section class="page-hero cs-hero">
+  <section class="page-hero">
     <div class="wrap">
-      <span class="eyebrow rv">Case study 01 · Claude Code</span>
-      <h1 class="rv rv-d1">AIOS: an AI operating system for a one-person business</h1>
-      <div class="cs-meta rv rv-d2">
-        <div><div class="k">Context</div><div class="v">Internal build, used daily</div></div>
-        <div><div class="k">Stack</div><div class="v">Claude Code · slash commands · session memory</div></div>
-        <div><div class="k">Pillars</div><div class="v">Build → Teach</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap prose rv">
-      <h2>The challenge</h2>
-      <p>A founder-led studio has one operator wearing every hat: client delivery, lead generation, content creation, sales pipeline, admin. Each hat has its own tools, its own context, and its own switching cost — and the switching cost is where the day disappears.</p>
-      <p>The question behind AIOS: <strong>could one AI environment hold all of it</strong> — not as a chatbot you ask things, but as an operating system that runs the business's routines?</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap prose rv">
-      <h2>The approach</h2>
-      <p>AIOS was built inside Claude Code as a set of <strong>eleven slash commands</strong>, each one owning a business function:</p>
-      <ul>
-        <li><strong>Daily briefing</strong> — one command compiles inbox, pipeline and job status into a single morning read.</li>
-        <li><strong>Client delivery</strong> — engagement workflows with their context, files and next steps loaded on demand.</li>
-        <li><strong>Lead generation and pipeline</strong> — prospect research, scoring and follow-up tracking.</li>
-        <li><strong>Content creation</strong> — drafting workflows tuned to a specific voice across four platforms.</li>
-        <li><strong>Session memory</strong> — what happened last session carries into the next, so context is never rebuilt by hand.</li>
-      </ul>
-      <p>The design rule throughout: a command earns its place by being used <strong>daily</strong> — anything that demoed well but wasn't reached for got cut.</p>
+      <span class="eyebrow rv">Newsletter · plain-language AI</span>
+      <h1 class="h-display rv rv-d1">Signal, not <em>hype</em>.</h1>
+      <p class="lede rv rv-d2" style="max-width:60ch">Each issue takes one AI tool, workflow or idea and explains it the way an operator needs it explained — what it's for, what it costs, and how to wire it into a real business. Written by a practitioner, not a pundit.</p>
+      <form class="news-form rv rv-d3" data-news-form style="margin-top:30px;max-width:520px">
+        <input type="email" name="email" placeholder="you@company.com" autocomplete="email" aria-label="Email address" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+        <p class="news-msg" data-news-msg role="status" aria-live="polite"></p>
+      </form>
+      <p class="rv rv-d3" style="margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--muted)">Free · No spam · Unsubscribe anytime</p>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="prose rv"><h2>Outcomes</h2></div>
-      <div class="cs-outcomes rv">
-        <div class="card"><div class="num">11</div><div class="lbl">Slash commands in production</div></div>
-        <div class="card"><div class="num">1</div><div class="lbl">Morning briefing replacing 4 app check-ins</div></div>
-        <div class="card"><div class="num">Daily</div><div class="lbl">Real usage — not a demo</div></div>
+      <div class="sec-head rv">
+        <span class="eyebrow">Archive</span>
+        <h2 class="h-sec">Every issue, <em>readable here.</em></h2>
+      </div>
+      <div class="grid-3">
+        <a class="card cs-card rv rv-d1" href="/newsletter/issue-1">
+          <div class="cs-top"><span>Issue 01</span><b>Jul 2026</b></div>
+          <div class="cs-body">
+            <h3>Start with the boring task</h3>
+            <p class="lede" style="font-size:15px;margin-top:10px">How to find the first thing in your business actually worth automating — and why it's never the impressive one.</p>
+            <span class="go">Read the issue →</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap prose rv">
-      <h2>Why this matters</h2>
-      <p>AIOS is the studio eating its own cooking. The same pattern — <strong>map the routines, wire them into an AI environment, cut what isn't used</strong> — is what a client engagement looks like, applied to your business instead of ours.</p>
-      <p>It's also proof that the interesting frontier isn't "using AI tools." It's giving a business one place where its context lives and its routines run.</p>
-    </div>
-  </section>
-
-  <section style="padding-top:0;border-bottom:none">
-    <div class="wrap cs-next rv">
-      <a href="/">← All case studies</a>
-      <a href="/case-study/prospect-scoring">Next: Prospect scoring engine →</a>
-    </div>
-  </section>
-
-  <section class="cta-band" style="border-top:1px solid var(--line)">
+  <section class="cta-band">
     <div class="wrap rv">
-      <h2>Want a system like this</h2>
-      <h2>running <em>your</em> business?</h2>
+      <h2>Prefer the systems built <em>for</em> you?</h2>
       <a class="btn btn-primary" href="/work-with-us">Work with us <span class="arr">→</span></a>
     </div>
   </section>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>U-go Support Hub newsletter</title>
+    <link>https://ugo-hub.vercel.app/newsletter</link>
+    <description>Plain-language AI for founders and operators — each issue explains what's worth using and how to wire it into a real business.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Jul 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://ugo-hub.vercel.app/newsletter/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Start with the boring task</title>
+      <link>https://ugo-hub.vercel.app/newsletter/issue-1</link>
+      <guid isPermaLink="true">https://ugo-hub.vercel.app/newsletter/issue-1</guid>
+      <pubDate>Tue, 14 Jul 2026 09:00:00 +0100</pubDate>
+      <description>How to find the first thing in your business actually worth automating — four filters that separate the task AI should do from the task that just looks impressive.</description>
+    </item>
+  </channel>
+</rss>

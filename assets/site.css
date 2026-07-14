@@ -280,6 +280,23 @@ footer{padding:60px 0 42px}
 .foot-base a{color:var(--muted-2)}
 .foot-base a:hover{color:var(--accent)}
 @media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:34px}}
+.foot-news{
+  display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;
+  margin-bottom:52px;padding-bottom:44px;border-bottom:1px solid var(--line);
+}
+.foot-news-copy p{color:var(--muted);font-size:14.5px;max-width:44ch}
+.news-form{display:flex;gap:10px;flex-wrap:wrap}
+.news-form input{
+  flex:1;min-width:210px;
+  background:var(--panel);border:1px solid var(--line);border-radius:11px;
+  padding:13px 16px;color:var(--cream);font-family:var(--body);font-size:15px;
+  transition:border-color .2s;
+}
+.news-form input:focus{border-color:var(--accent-line);outline:none}
+.news-form input::placeholder{color:var(--muted-2)}
+.news-form .btn{padding:13px 22px}
+.news-msg{flex-basis:100%;font-family:var(--mono);font-size:13px;color:var(--accent);min-height:0;margin:0}
+@media(max-width:760px){.foot-news{grid-template-columns:1fr;gap:22px}}
 
 /* ============================================================
    HOME

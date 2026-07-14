@@ -131,4 +131,35 @@
       a.style.maxHeight = open ? a.scrollHeight + "px" : "0";
     });
   });
+
+  /* newsletter form → /api/subscribe (footer, most pages) */
+  document.querySelectorAll("[data-news-form]").forEach(form => {
+    const input = form.querySelector('input[type="email"]');
+    const btn = form.querySelector('button[type="submit"]');
+    const msg = form.querySelector("[data-news-msg]");
+    form.addEventListener("submit", async e => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      btn.disabled = true;
+      btn.textContent = "Subscribing…";
+      try {
+        const res = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: input.value.trim() })
+        });
+        if (res.ok) {
+          msg.textContent = "You're on the list — welcome.";
+          form.reset();
+        } else {
+          msg.textContent = "That didn't go through — try again in a minute.";
+        }
+      } catch {
+        msg.textContent = "That didn't go through — try again in a minute.";
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Subscribe";
+      }
+    });
+  });
 })();
